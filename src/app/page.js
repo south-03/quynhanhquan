@@ -14,13 +14,13 @@ export default function Home() {
         <title>Quỳnh Anh Quán</title>
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </Head>
-      <Header />
-      <Welcome />
-      {/* <Menu />
-      <Map />
       <Information />
+      {/* <Header />
+      <Welcome />
+      <Menu />
+      <Map />
+      
       <Contact /> */}
     </div>
   );
 }
-
