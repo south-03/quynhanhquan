@@ -17,12 +17,12 @@ export default function FisrtMenu() {
                     <Card key={i}>
                         <DishImages src={Dish}/>
                             <CardContentStyle>
-                            {d.name}
-                            <br/>
-                            <span>{d.about}</span>
+                                {d.name}
+
+                                <span>{d.about}</span>
                             </CardContentStyle>
                         <BtnBuy> 
-                                <span>{d.price}</span>
+                                <span>${d.price}</span>
                                 <div>
                                     <AddShoppingCartIcon/>Buy now 
                                 </div>
@@ -45,16 +45,17 @@ const TilleStyle = styled("p")`
     font-size: 55px;
     color: #EE6161;
     font-weight: 900;
-    margin: 50px;
+    margin: 10px 150px;
 `
 
 const CardContentStyle = styled("p")`
+    display: grid;
     color: #EF1616;
     font-size: 35px;
-    font-style: bold;
     font-weight: 700;
     line-height: normal;
-    margin:20px;
+    justify-content: center;
+    margin: revert;
     & span {
         color: #EE6161;
         font-size: 25px;
@@ -77,15 +78,13 @@ const CardContainer = styled("div")`
 `
 
 const Card = styled("div")`
-    max-width: 350px;
-    max-heigth: 400px;
+    max-width: 300px;
     border-radius: 10px;
     border: 3px solid #EE6161;
 `
 
 const DishImages = styled(Image)`
-    width: 350px;
-    height: 250px;
+    width: 100%;
 `
 
 const BtnBuy = styled("button")`

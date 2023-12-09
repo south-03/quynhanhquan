@@ -2,31 +2,31 @@
     {
         "id":1,
         "name": "Bun bo dac biet",
-        "price": "50.000vnd",
+        "price": "2",
         "about": "Bun bo dac biet"
     },
     {
         "id":2,
         "name": "Bun bo dac biet",
-        "price": "50.000vnd",
+        "price": "2",
         "about": "Bun bo dac biet"
     },
     {
         "id":3,
         "name": "Bun bo dac biet",
-        "price": "50.000vnd",
+        "price": "2",
         "about": "Bun bo dac biet"
     },
     {
         "id":4,
         "name": "Bun bo dac biet",
-        "price": "50.000vnd",
+        "price": "2",
         "about": "Bun bo dac biet"
     },
     {
         "id":5,
         "name": "Bun bo dac biet",
-        "price": "50.000vnd",
+        "price": "2",
         "about": "Bun bo dac biet"
     }
 ]
