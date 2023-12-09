@@ -11,19 +11,20 @@ export default function FisrtMenu() {
     const scrollRef = useHorizontalScroll();
     return (
         <Container>
-            <TilleStyle>Best Seller</TilleStyle>
+            <TilleStyle>Best Seller Now</TilleStyle>
             <CardContainer ref={scrollRef} className="wrapper">
                     {Data.map((d,i) => (
                     <Card key={i}>
-                        <DishImages src={Dish} alt=""/>
-                        <CardContentStyle>
-                        {d.name}
-                        <h1>{d.about}</h1>
-                        </CardContentStyle>
+                        <DishImages src={Dish}/>
+                            <CardContentStyle>
+                            {d.name}
+                            <br/>
+                            <span>{d.about}</span>
+                            </CardContentStyle>
                         <BtnBuy> 
                                 <span>{d.price}</span>
                                 <div>
-                                    <AddShoppingCartIcon/>Buy Now 
+                                    <AddShoppingCartIcon/>Buy now 
                                 </div>
                         </BtnBuy>
                     </Card>
@@ -37,11 +38,14 @@ const Container = styled("div")`
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content:center;
 `
 
 const TilleStyle = styled("p")`
     font-size: 55px;
     color: #EE6161;
+    font-weight: 900;
+    margin: 50px;
 `
 
 const CardContentStyle = styled("p")`
@@ -51,7 +55,7 @@ const CardContentStyle = styled("p")`
     font-weight: 700;
     line-height: normal;
     margin:20px;
-    & h1 {
+    & span {
         color: #EE6161;
         font-size: 25px;
         font-style: normal;
@@ -67,7 +71,9 @@ const CardContainer = styled("div")`
     gap:40px;
     overflow: auto;
     max-width: 90%;
-    margin: 50px;
+    align-items: center
+    margin: auto;
+    align-self: center;
 `
 
 const Card = styled("div")`

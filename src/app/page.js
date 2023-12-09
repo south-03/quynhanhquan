@@ -15,7 +15,6 @@ export default function Home() {
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </Head>
       <Menu />
-      <Map />
       {/* <Menu />
       
       <Information />
