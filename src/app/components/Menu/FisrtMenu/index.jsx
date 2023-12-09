@@ -11,7 +11,7 @@ export default function FisrtMenu() {
     const scrollRef = useHorizontalScroll();
     return (
         <Container>
-            <TilleStyle>Best Seller Now</TilleStyle>
+            <TitleStyle>Best Seller Now</TitleStyle>
             <CardContainer ref={scrollRef} className="wrapper">
                     {Data.map((d,i) => (
                     <Card key={i}>
@@ -41,7 +41,7 @@ const Container = styled("div")`
     justify-content:center;
 `
 
-const TilleStyle = styled("p")`
+const TitleStyle = styled("p")`
     font-size: 55px;
     color: #EE6161;
     font-weight: 900;
