@@ -50,7 +50,7 @@ export default function Header() {
       </AppBar>
     </AppBarContainer>
   );
-}
+
 
 const AppBarContainer = styled("div")`
   // max-width: 1440px;
