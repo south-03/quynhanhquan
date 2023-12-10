@@ -22,15 +22,6 @@ function Contact() {
           </div>
         </Stack>
       </ContactBox>
-      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
-      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
-      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
-      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
-      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
-      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
-      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
-      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
-
 
 
     </div>
