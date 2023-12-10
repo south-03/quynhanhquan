@@ -1,18 +1,18 @@
 "use client";
 import { AppBar, Stack, Toolbar, styled, Grid } from "@mui/material";
 import * as React from "react";
-import logo from "../../../../public/favicon.ico"
-import Image from 'next/image'
-import MenuIcon from '@mui/icons-material/Menu';
-import MapIcon from '@mui/icons-material/Map';
-import InfoIcon from '@mui/icons-material/Info';
-import ContactsIcon from '@mui/icons-material/Contacts';
+import logo from "../../../../public/favicon.ico";
+import Image from "next/image";
+import MenuIcon from "@mui/icons-material/Menu";
+import MapIcon from "@mui/icons-material/Map";
+import InfoIcon from "@mui/icons-material/Info";
+import ContactsIcon from "@mui/icons-material/Contacts";
 
 export default function Header() {
   return (
     <AppBarContainer>
       <AppBar
-        position="fixed"
+        position="static"
         sx={{ background: "#FFFFFF" }}
         className="nav header"
       >
@@ -21,13 +21,8 @@ export default function Header() {
             <Image src={logo} alt="logo" />
           </LogoContainer>
 
-
-          <nav>
-            <Stack
-              direction={"row"}
-              position="relative"
-              sx={{ ml: 15 }}
-            >
+          <nav className="items-center">
+            <Stack direction={"row"} position="relative" sx={{ ml: 15 }}>
               <ContainerMenu>
                 <ContainerBtn>
                   <MenuIcon sx={{ color: "#EE6161", fontSize: 40 }} />
@@ -51,7 +46,6 @@ export default function Header() {
               </ContainerMenu>
             </Stack>
           </nav>
-
         </Toolbar>
       </AppBar>
     </AppBarContainer>
@@ -59,7 +53,7 @@ export default function Header() {
 }
 
 const AppBarContainer = styled("div")`
-  max-width: 1440px;
+  // max-width: 1440px;
 `;
 
 const LogoContainer = styled("div")`
@@ -68,13 +62,13 @@ const LogoContainer = styled("div")`
   padding: 5px;
 `;
 
-const ContainerMenu = styled('a')`
+const ContainerMenu = styled("a")`
   width: 850px;
   height: 60px;
-  display:flex;
+  display: flex;
   padding: 5px;
   border-radius: 40px;
-  border: 1px solid #EE6161;
+  border: 1px solid #ee6161;
 `;
 
 const ContainerBtn = styled("button")`
@@ -84,10 +78,9 @@ const ContainerBtn = styled("button")`
 `;
 
 const ContentNbtn = styled("p")`
-  font-family: Inter;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 44px;
-  color: #EE6161;
+  color: #ee6161;
   margin-left: 10px;
 `;
