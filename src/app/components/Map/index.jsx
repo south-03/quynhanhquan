@@ -9,7 +9,10 @@ export default function Map(){
 
     const handleClick = (e) => {
         setActive(e.target.id);
-      };
+        if (e.target.id === "FirstTab") {
+            firstButtonRef.current.focus();
+        }
+    };
 
     const tabs = [
     {
@@ -24,6 +27,12 @@ export default function Map(){
     }
     ]
 
+    const firstButtonRef = React.useRef(null);
+
+    React.useEffect(() => {
+        firstButtonRef.current.focus();
+    }, []);
+
     return(
         <BigContainer>
             <TitleStyle>Location</TitleStyle>
@@ -33,7 +42,7 @@ export default function Map(){
                 key={i}
                 id={tab.id}               
                 onClick={handleClick}
-                className="active-tab"
+                ref={i === 0 ? firstButtonRef : null}
             >
                 {tab.title}
             </BtnMap>
@@ -86,9 +95,11 @@ const BtnMap = styled("button")`
     font-size: 35px;
     font-style: normal;
     font-weight: 900;
+    margin-right: 10px;
     &:focus{
         border-radius: 18px 18px 0px 0px;
         border: 1px solid #EE6161;
+        border-bottom: none;
     }
 `
 
