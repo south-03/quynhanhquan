@@ -22,6 +22,15 @@ function Contact() {
           </div>
         </Stack>
       </ContactBox>
+      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
+      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
+      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
+      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
+      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
+      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
+      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
+      <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" /><br />
+
 
 
     </div>
@@ -50,7 +59,9 @@ const Contacta = styled("a")`
 color: #EE6161;
 font-size: 15px;
 font-family: 'Inter';
-font-weight: bold;
+font-weight: 900;
+place-items: center;
+
 
 display: flex;
   justify-content: flex-start; 
