@@ -10,22 +10,22 @@ import EmailIcon from '@mui/icons-material/Email';
 
 
 function Contact() {
-    return (
-        <div className="contact-page">
-            <Contacth1>Contact Me</Contacth1><br/>
-            <ContactBox sx={{ p: 2, display: 'flex' }}>
-            <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" />
-    <Stack spacing={0.5}>
-    <div className="links">
-                <Contacta href="https://www.facebook.com/" target="_blank"><FacebookIcon/>Quỳnh Anh nè</Contacta><br/>
-                <Contacta href="mailto:bunboquynhanh@gmail.com"><EmailIcon/>bunboquynhanh@gmail.com</Contacta>
-            </div>
-    </Stack>
-  </ContactBox>
-  
+  return (
+    <div className="contact-page">
+      <Contacth1>Contact Me</Contacth1><br />
+      <ContactBox sx={{ p: 2, display: 'flex' }}>
+        <ContactImg src="photo\bunbo.png" alt="" className="inside-photo" />
+        <Stack spacing={0.5}>
+          <div className="links">
+            <Contacta href="https://www.facebook.com/" target="_blank"><FacebookIcon />Quỳnh Anh nè</Contacta><br />
+            <Contacta href="mailto:bunboquynhanh@gmail.com"><EmailIcon />bunboquynhanh@gmail.com</Contacta>
+          </div>
+        </Stack>
+      </ContactBox>
 
-        </div>
-    );
+
+    </div>
+  );
 }
 
 

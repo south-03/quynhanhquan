@@ -43,20 +43,20 @@ const BackToTopButton = () => {
         borderRadius: '50%',
         width: '50px',
         height: '50px',
-        
+
         minWidth: 0,
         minHeight: 0,
-        padding: 0, 
-        lineHeight: 0, 
-        
-       
+        padding: 0,
+        lineHeight: 0,
+
+
       }}
       onClick={scrollToTop}
-      endIcon={<KeyboardArrowUpIcon style={{ 
-        marginRight :'10px',
-      }}/>}
+      endIcon={<KeyboardArrowUpIcon style={{
+        marginRight: '10px',
+      }} />}
     >
-      
+
     </Button>
   );
 };
