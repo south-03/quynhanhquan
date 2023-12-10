@@ -15,16 +15,14 @@ export default function Home() {
         <title>Quỳnh Anh Quán</title>
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </Head>
-      <Header />
-      <Welcome />
-      {/* <Menu />
-      <Map />
       <Information />
-       */
-      <Contact />
-      }
-      <ButtonBackToTop />
+      {/* <Header />
+      <Welcome />
+      <Menu />
+      <Map />
+      
+      <Contact /> */}
+      <Menu />
     </div>
   );
 }
-
