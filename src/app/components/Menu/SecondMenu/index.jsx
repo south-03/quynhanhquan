@@ -99,7 +99,7 @@ const BtnBuy = styled("button")`
     box-shadow: -2px 6px 4px 0px #B12A2A;
     padding: 0px 10px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     &:hover {
         box-shadow: -2px 6px 4px 0px #B12A2A inset;
     }

@@ -93,12 +93,12 @@ const BtnBuy = styled("button")`
     height: 45px;
     background-color: #EE6161;
     color: #FFFFFF;
-    margin:60px 20px 30px;
+    margin:60px 10px 30px;
     border-radius: 20px;
     box-shadow: -2px 6px 4px 0px #B12A2A;
     padding: 0px 10px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     &:hover {
         box-shadow: -2px 6px 4px 0px #B12A2A inset;
     }
