@@ -30,6 +30,7 @@ export default function Map() {
   ];
 
     const firstButtonRef = React.useRef(null);
+    const secondButtonRef = React.useRef(null);
 
     React.useEffect(() => {
         firstButtonRef.current.focus();
@@ -44,7 +45,8 @@ export default function Map() {
             key={i}
             id={tab.id}
             onClick={handleClick}
-            ref={i === 0 ? firstButtonRef : null}
+            ref ={i === 0 ? firstButtonRef : secondButtonRef}
+            style={i === 0 ? {outline: "red solid 0px"} : null}
           >
             {tab.title}
           </BtnMap>
@@ -106,6 +108,7 @@ const BtnMap = styled("button")`
     font-style: normal;
     font-weight: 900;
     margin-right: 10px;
+    border-radius: 18px 18px 0px 0px;
     &:focus{
         border-radius: 18px 18px 0px 0px;
         border: 1px solid #EE6161;
