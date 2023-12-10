@@ -21,6 +21,7 @@ export default function Home() {
       <Map />
       
       <Contact /> */}
+      <Menu />
     </div>
   );
 }
