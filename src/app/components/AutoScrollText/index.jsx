@@ -101,7 +101,7 @@ const AutoScrollContainer = styled("div")`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max height: 100px;
+  max-height: 100px;
 `;
 
 const TextBox = styled("a")`

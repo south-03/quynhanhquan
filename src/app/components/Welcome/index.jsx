@@ -71,6 +71,10 @@ const BtnDiscover = styled("button")`
   border: 1px solid #ee6161;
   background: #ee6161;
   box-shadow: -5px 8px 4px 0px #b12a2a;
+  &:hover {
+    transform: scale(0.9);
+    transition-duration: 0.9s;
+  }
 `;
 
 const ContentBtnD = styled("a")`
