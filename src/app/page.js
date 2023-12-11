@@ -10,7 +10,7 @@ import Menu from "./components/Menu";
 import Map from "./components/Map";
 import Information from "./components/Information";
 import Contact from "./components/Contact";
-import ButtonBackToTop from './components/Button-back-to-top';
+import ButtonBackToTop from "./components/Button-back-to-top";
 
 export default function Home() {
   return (
@@ -21,9 +21,14 @@ export default function Home() {
       </Head>
 
 
+
       <Header className="mt-2" />
       <Welcome />
       <AutoScrollText />
+      <Menu />
+      <Information />
+      <Contact />
+      <ButtonBackToTop />
     </div>
   );
 }
