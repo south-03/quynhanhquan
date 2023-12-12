@@ -7,11 +7,11 @@ import Map from "./components/Map";
 import Information from "./components/Information";
 import Contact from "./components/Contact";
 import ButtonBackToTop from "./components/Button-back-to-top";
-import AutoScroll from "./components/Auto Scroll Text";
+import AutoScroll from "./components/Auto";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-8">
+    <div className="">
       <Head>
         <title>Quỳnh Anh Quán</title>
         <link rel="icon" href="./favicon.ico" sizes="any" />
