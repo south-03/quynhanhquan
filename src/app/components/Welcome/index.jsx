@@ -35,6 +35,7 @@ const BnWelcome = styled("a")`
   flex-direction: row;
   background: #fff;
   height: 500px;
+
 `;
 
 const ContentContainer = styled("a")`
@@ -44,6 +45,7 @@ const ContentContainer = styled("a")`
   align-items: flex-start;
   width: 50%;
   margin-left: 55px;
+
 `;
 
 const TitleWelcome = styled("a")`
@@ -52,6 +54,7 @@ const TitleWelcome = styled("a")`
   line-height: 75px;
   text-align: left;
   color: #ee6161;
+
 `;
 
 const DWelcome = styled("a")`
@@ -61,6 +64,7 @@ const DWelcome = styled("a")`
   text-align: left;
   color: #ee6161;
   margin-bottom: 30px;
+
 `;
 
 const BtnDiscover = styled("button")`
@@ -72,8 +76,7 @@ const BtnDiscover = styled("button")`
   background: #ee6161;
   box-shadow: -5px 8px 4px 0px #b12a2a;
   &:hover {
-    transform: scale(0.9);
-    transition-duration: 0.9s;
+    box-shadow: -2px 6px 4px 0px #b12a2a inset;
   }
 `;
 
