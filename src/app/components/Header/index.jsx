@@ -52,9 +52,7 @@ export default function Header() {
   );
 }
 
-const AppBarContainer = styled("div")`
-  // max-width: 1440px;
-`;
+const AppBarContainer = styled("div")``;
 
 const LogoContainer = styled("div")`
   width: 180px;
